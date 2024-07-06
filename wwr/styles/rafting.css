@@ -6,8 +6,8 @@
     --accent1-color: #007EA7;
     --accent2-color: #FFFFFF;
 
-    --heading-font: 'Roboto', sans-serif;
-    --paragraph-font: 'Roboto', sans-serif;
+    --heading-font: 'Roboto', Arial, sans-serif;
+    --paragraph-font: 'Roboto', Arial, sans-serif;
 
     --nav-background-color: #00171F;
     --nav-link-color: #FFFFFF;
@@ -22,7 +22,7 @@
 }
 
 body {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -36,9 +36,45 @@ p {
     color: var(--primary-color);
 }
 
-nav a {
-    text-decoration: none;;
+header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+    margin: 1rem auto;
 }
+
+header img {
+    margin: 0 0.25rem 0 1rem;
+    width: 150px;
+    height: auto;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    flex: 1 1 100%;
+}
+
+.navigation a {
+    display: block;
+    color: var(--nav-hover-background-color);
+    padding: 1rem;
+    text-decoration: none;
+    font-family: var(--heading-font);
+}
+
+.navigation a:hover {
+    color: var(--nav-hover-link-color);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
 
 /* Class Selector */
 
@@ -85,17 +121,53 @@ nav a {
     padding: 1rem;
 }
 
-section h2 {
-padding: 2rem 0;
+section {
+    text-align: center;
 }
 
-section img {
+section h2 {
+    padding: 1rem 0;
+}
+
+section p {
+    padding: 1rem 0;
+}
+
+.image-history img {
     width: 500px;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+    font-family: var(--paragraph-font);
+
+}
+
+.figure-flex {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+figure img {
+    width: 180px;
+    height: 100%;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
 }
 
 .social-links img {
     width: 30px;
     height: auto;
-    margin-right: 5px;
-    margin-top: 0.5rem;
+    margin-left: 15px;
 }
