@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description" content="Contact page for Whitewater Rafting website">
+    <meta name="author" content="Keith Sevilla">
+
+    <link rel="stylesheet" href="./styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="./images/logo.png" alt="logo">
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>            
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero-contact">
+            <h1>Our Team</h1>
+            <div class="hero-flex">
+            <section>
+                <img src="./images/employee-1.jpg" alt="Rafting Instructor">
+                <h2>Rafting Instructor</h2>
+            </section>
+            <section>
+                <img src="./images/employee-2.jpg" alt="Trip Leader">
+                <h2>Trip Leader</h2>
+            </section>
+            <section>
+                <img src="./images/employee-3.jpg" alt="River Guide">
+                <h2>River Guide</h2>
+            </section>
+        </div>
+        </div>
+
+        <div class="contact-grid">
+        <section class="company-info">           
+            
+            <h2>Company Information</h2>
+            <h3>Address:</h3>
+            <p>123 Main Street Anytown, CA 12345</p>
+            <h3>Phone number:</h3>
+            <p>(555) 555-1234</p>
+            <h3>Email:</h3>
+            <p>info@whitewaterrafting.com</p>
+            <h3>Location</h3>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193365.14327960872!2d-112.08529775874193!3d40.77675072636592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87523d9488d131ed%3A0x5b53b7a0484d31ca!2sSalt%20Lake%20City%2C%20UT%2C%20USA!5e0!3m2!1sen!2s!4v1720851273057!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        
+        </section>
+        <section>
+            
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                
+                    <div class="radio-group">
+                        <input type="radio" name="purpose" id="inquiry" value="inquiry">
+                        <label for="inquiry">General Inquiry</label>               
+                    
+                    </div>
+                    <div class="radio-group">
+                    <input type="radio" name="purpose" id="question" value="question">
+                    <label for="question">Reservation Question</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="purpose" id="suggestion" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </div>
+                    
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="6"></textarea>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" name="subscribe" id="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+                
+                
+                <button type="submit">Submit</button>
+            
+            </form>
+        
+        </section>
+    </div>
+        
+    </main>
+    
+    <footer>
+        <p>&copy;2024 | Whitewater Rafting | Keith Sevilla</p>
+        <div class="social-links">
+            <a href="https://facebook.com"><img src="./images/facebook.svg" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="./images/twitter.svg" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="./images/instagram.svg" alt=""></a>
+        </div>
+
+    </footer>
+</body>
+</html>
