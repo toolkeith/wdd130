@@ -464,10 +464,10 @@ input[type='checkbox'] {
   background-color: rgba(0, 52, 89, 0.8);
 }
 
-.hero article > p {
+.hero article > h4 {
   color: var(--accent2-color);
   padding: 1rem;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .hero article > img {
